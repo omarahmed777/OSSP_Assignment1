@@ -36,13 +36,13 @@ Node * addNode(Node *root, int value) {
    * 2. There is a node occupying that space
    *     so you should recurse another level without saving anything
    */
-  else if (value > root->value) { //value>root so left subtree
+  else if (value > root->value) { //value > root, so left subtree
     if (root->left == NULL) //No child, safe to save
       root->left = addNode(root->left, value);
     else //Child is occuyping space, recurse further down
       addNode(root->left, value);
   }
-  else if (value < root->value) { //value<root so right subtree
+  else if (value < root->value) { //value < root, so right subtree
     if (root->right == NULL) //No child, safe to save
       root->right = addNode(root->right, value);
     else //Child is occuyping space, recurse further down
@@ -110,7 +110,7 @@ Node * removeNode(Node *root, int value) {
   return root;
 }
 
-//Display a subtree's contents
+//Displays a subtree's contents
 void displaySubtree(Node * N) {
   if (N == NULL) //If an empty node is reached, return
     return;
