@@ -14,7 +14,4 @@ This is purely for archiving my own solution to the actual `bst.c` file, using C
 ## Grade and potential issues
 My final grade is for this assignment is: [Not yet graded]
 
-As of 21/10/22 there ARE memory leaks, which I do intend to come back to and fix eventually, in my own time. However, for this assignment memory leaks will not negatively impact our grade and as this is the case, a working (but leaking) solution is sufficient.
-
-(People do still use Chrome, after all)
-
+As of 21/10/22 there ARE memory leaks, which I do intend to come back to and fix eventually, in my own time. However, for this assignment memory leaks will not negatively impact our grade and as this is the case, a working (but leaking) solution is sufficient. (People do still use Chrome, after all)
