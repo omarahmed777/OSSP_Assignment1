@@ -24,7 +24,7 @@ Node *newNode(int value) {
 
 /* Add Node Function
  * Inserts node into tree
- * Returns root of tree
+ * Returns created leaf
  */
 Node * addNode(Node *root, int value) {
   if (root == NULL){ //If no root exists, create a new one
@@ -54,7 +54,7 @@ Node * addNode(Node *root, int value) {
 }
 
 /* removeNode Helper Function
- * finds inorder successor (rightmost of left subtree) when deleting node w/ 2 children
+ * Finds inorder successor (rightmost of left subtree) when deleting node w/ 2 children
  * Returns rightmost node of left subtree
  */
 Node* minLeftNode(Node* node) {
@@ -121,6 +121,9 @@ void displaySubtree(Node * N) {
   }
 }
 
+/* Counts number of leaves in the tree
+* A leaf node is a node with no child nodes
+*/
 int numberLeaves(Node * N) {
   if (N == NULL) //Base case. Checking if root is NULL
     return 0;
@@ -150,17 +153,24 @@ Node * removeSubtree(Node * root, int value) {
   return root;
 }
 
+/* nodeDepth Helper Function
+* Recursively adds depth every time a level is traversed
+* Returns depth of inputted node
+*/
 int findDepth(Node * N, int value){
   if (N == NULL) //If traversed N is null, depth = 0
     return 0;
-  if (N->value == value)
+  if (N->value == value) //If node is found, do not add depth as a new level is not accessed
     return 0;
-  if (N->value < value)
+  if (N->value < value) //Otherwise, add 1 to the depth and traverse down another level
     return 1 + findDepth(N->right, value);
   else if (N->value > value)
     return 1 + findDepth(N->left, value);
 }
 
+/* Calculates depth of inputted node N respective to root node R
+* Returns depth of node N using helper function findDepth
+*/
 int nodeDepth(Node * R, Node * N){
   //If R is NULL, tree is empty; so depth = -1
   if (R == NULL || N == NULL) //If *FIRST* N = NULL, then you cannot calculate its depth
