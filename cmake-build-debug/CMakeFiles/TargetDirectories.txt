@@ -1,0 +1,3 @@
+C:/Users/AnerdyArab/CLionProjects/OSSP_Assignment1/cmake-build-debug/CMakeFiles/OSSP_Assignment1.dir
+C:/Users/AnerdyArab/CLionProjects/OSSP_Assignment1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/AnerdyArab/CLionProjects/OSSP_Assignment1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
