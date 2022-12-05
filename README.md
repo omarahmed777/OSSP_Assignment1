@@ -12,6 +12,8 @@ While I did also contribute to Chit's repo, my contributions were purely editori
 This is purely for archiving my own solution to the actual `bst.c` file, using Chit and co.'s `test_bst.c` file.
 
 ## Grade and potential issues
-My final grade is for this assignment is: [Not yet graded]
+My final grade is for this assignment is: 14/15 (93.3%)
+
+My implementation of nodeDepth is falsifiable, and needs to be fixed.
 
 As of 21/10/22 there ARE memory leaks, which I do intend to come back to and fix eventually, in my own time. However, for this assignment memory leaks will not negatively impact our grade and as this is the case, a working (but leaking) solution is sufficient. (People do still use Chrome, after all)
